@@ -1,0 +1,34 @@
+/* *** VARIABLES *** */
+
+/* Colors */
+$white: #eee;
+$black: #18181b;
+$contrast-bright: #fa572a;
+$contrast-dark: #fa572a;
+
+/* Typography */
+$root: 62.5%; // 16px * 0.625 = 10px
+$fontsize: 1.6rem; // 1.6rem = 10px * 1.6 = 16px
+$h6: 1.6rem;
+$h5: 1.8rem;
+$h4: 2.2rem;
+$h3: 2.6rem;
+$h2: 3.2rem;
+$h1: 3.8rem;
+$headingmargin: 1.6rem;
+$regular: 300;
+$bold: 700;
+$color-bright: #18181b;
+$color-dark: #eee;
+
+/* Responsive */
+$container-ls: 120rem;
+$padding-ls: 4rem;
+$breakpoint-ls: 128rem;
+$container-ms: 96rem;
+$padding-ms: 3.2rem;
+$breakpoint-ms: 102.4rem;
+$container-small: 73.6rem;
+$padding-small: 1.6rem;
+$breakpoint-small: 76.8rem;
+$padding-mobile: 1.6rem;

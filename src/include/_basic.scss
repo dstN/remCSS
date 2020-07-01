@@ -1,0 +1,19 @@
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: $root;
+}
+@media (prefers-color-scheme: light) {
+  body {
+    color: $color-bright;
+    background-color: $white;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    color: $color-dark;
+    background-color: $black;
+  }
+}

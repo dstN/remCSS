@@ -45,8 +45,8 @@
     "prepublishOnly": "npm run build",
     "sass": "node-sass --output-style expanded src/remcss.scss dist/remcss.css && node-sass --output-style compressed src/remcss.scss dist/remcss.min.css",
     "serve": "browser-sync start --no-notify -s test --ss dist -f dist",
-    "start": "run-p build watch serve",
+    "start": "run-p watch serve",
     "test": "npm run build",
-    "watch": "onchange src -- run-p build"
+    "watch": "onchange src -- run-p sass autoprefixer"
   }
 }

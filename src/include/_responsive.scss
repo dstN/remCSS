@@ -1,0 +1,24 @@
+.container {
+  width: 100%;
+  padding: 0 $padding-mobile;
+  margin: 0 auto;
+  position: relative;
+}
+@media only screen and (min-width: $breakpoint-small) {
+  .container {
+    max-width: $container-small;
+    padding: 0 $padding-small;
+  }
+}
+@media only screen and (min-width: $breakpoint-ms) {
+  .container {
+    max-width: $container-ms;
+    padding: 0 $padding-ms;
+  }
+}
+@media only screen and (min-width: $breakpoint-ls) {
+  .container {
+    max-width: $container-ls;
+    padding: 0 $padding-ls;
+  }
+}

@@ -1,0 +1,120 @@
+/*
+MIT License
+
+Copyright (c) 2020 Dustin Tramm <dustin.tramm@yinside.de>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap");
+/* *** VARIABLES *** */
+/* Colors */
+/* Typography */
+/* Responsive */
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: #18181b;
+    background-color: #eee;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #eee;
+    background-color: #18181b;
+  }
+}
+
+/* TYPOGRAPHY */
+body {
+  font-size: 1.6rem;
+  font-family: 'Baloo 2', cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  margin: 0 0 1.6rem;
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.6rem;
+}
+
+h4 {
+  font-size: 2.2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.6rem;
+}
+
+.container {
+  width: 100%;
+  padding: 0 1.6rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media only screen and (min-width: 76.8rem) {
+  .container {
+    max-width: 73.6rem;
+    padding: 0 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 102.4rem) {
+  .container {
+    max-width: 96rem;
+    padding: 0 3.2rem;
+  }
+}
+
+@media only screen and (min-width: 128rem) {
+  .container {
+    max-width: 120rem;
+    padding: 0 4rem;
+  }
+}
+
+/*# sourceMappingURL=remcss.css.map */
