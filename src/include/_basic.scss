@@ -5,15 +5,16 @@ html {
   box-sizing: border-box;
   font-size: $root;
 }
-@media (prefers-color-scheme: light) {
-  body {
-    color: $color-bright;
-    background-color: $white;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  body {
+body {
+  color: $color-bright;
+  background-color: $white;
+  @media (prefers-color-scheme: dark) {
     color: $color-dark;
     background-color: $black;
   }
+}
+hr {
+  border: 0;
+  border-top: 0.05rem solid $contrast;
+  margin: 2.5rem 0;
 }

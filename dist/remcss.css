@@ -35,11 +35,9 @@ html {
   font-size: 62.5%;
 }
 
-@media (prefers-color-scheme: light) {
-  body {
-    color: #18181b;
-    background-color: #eee;
-  }
+body {
+  color: #18181b;
+  background-color: #eee;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -47,6 +45,12 @@ html {
     color: #eee;
     background-color: #18181b;
   }
+}
+
+hr {
+  border: 0;
+  border-top: 0.05rem solid #fa572a;
+  margin: 2.5rem 0;
 }
 
 /* TYPOGRAPHY */
