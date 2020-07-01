@@ -22,13 +22,16 @@ $color-bright: #18181b;
 $color-dark: #eee;
 
 /* Responsive */
+$container-large: 152rem;
+$padding-large: 4rem;
+$breakpoint-large: 100rem;
 $container-ls: 120rem;
 $padding-ls: 4rem;
-$breakpoint-ls: 128rem;
+$breakpoint-ls: 80rem;
 $container-ms: 96rem;
 $padding-ms: 3.2rem;
-$breakpoint-ms: 102.4rem;
+$breakpoint-ms: 64rem;
 $container-small: 73.6rem;
 $padding-small: 1.6rem;
-$breakpoint-small: 76.8rem;
+$breakpoint-small: 48rem;
 $padding-mobile: 1.6rem;

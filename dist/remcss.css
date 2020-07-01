@@ -94,25 +94,33 @@ h6 {
   padding: 0 1.6rem;
   margin: 0 auto;
   position: relative;
+  display: block;
 }
 
-@media only screen and (min-width: 76.8rem) {
+@media only screen and (min-width: 48rem) {
   .container {
     max-width: 73.6rem;
     padding: 0 1.6rem;
   }
 }
 
-@media only screen and (min-width: 102.4rem) {
+@media only screen and (min-width: 64rem) {
   .container {
     max-width: 96rem;
     padding: 0 3.2rem;
   }
 }
 
-@media only screen and (min-width: 128rem) {
+@media only screen and (min-width: 80rem) {
   .container {
     max-width: 120rem;
+    padding: 0 4rem;
+  }
+}
+
+@media only screen and (min-width: 100rem) {
+  .container {
+    max-width: 152rem;
     padding: 0 4rem;
   }
 }
