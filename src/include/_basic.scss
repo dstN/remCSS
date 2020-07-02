@@ -1,15 +1,27 @@
 *, *:after, *:before {
   box-sizing: inherit;
 }
+::selection {
+  @include selection;
+}
+::-moz-selection {
+  @include selection;
+}
 html {
   box-sizing: border-box;
   font-size: $root;
 }
 body {
-  color: $color-bright;
+  font-size: $fontsize;
+  font-family: 'Baloo 2', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  color: $black;
   background-color: $white;
+  font-weight: $regular;
+  letter-spacing: 0.05rem;
+  line-height: 1.6;
+  padding: 2rem 0;
   @media (prefers-color-scheme: dark) {
-    color: $color-dark;
+    color: $white;
     background-color: $black;
   }
 }
@@ -17,4 +29,22 @@ hr {
   border: 0;
   border-top: 0.05rem solid $contrast;
   margin: 2.5rem 0;
+}
+a {
+  color: desaturate($contrast, 33%);
+  text-decoration: none;
+  transition: color ease-in-out 0.15s;
+  &:hover, &:focus {
+    color: $contrast;
+  }
+  &:visited {
+    color: darken($contrast, 33%);
+  }
+}
+mark {
+  @include selection;
+  padding: 0 0.25rem;
+}
+section {
+  padding: 4rem 0rem;
 }

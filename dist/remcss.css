@@ -30,14 +30,35 @@ SOFTWARE.
   box-sizing: inherit;
 }
 
+::-moz-selection {
+  color: #18181b;
+  background-color: #fa572a;
+}
+
+::selection {
+  color: #18181b;
+  background-color: #fa572a;
+}
+
+::-moz-selection {
+  color: #18181b;
+  background-color: #fa572a;
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
 
 body {
+  font-size: 1.6rem;
+  font-family: 'Baloo 2', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   color: #18181b;
   background-color: #eee;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  line-height: 1.6;
+  padding: 2rem 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -53,12 +74,31 @@ hr {
   margin: 2.5rem 0;
 }
 
-/* TYPOGRAPHY */
-body {
-  font-size: 1.6rem;
-  font-family: 'Baloo 2', cursive;
+a {
+  color: #d66b4e;
+  text-decoration: none;
+  transition: color ease-in-out 0.15s;
 }
 
+a:hover, a:focus {
+  color: #fa572a;
+}
+
+a:visited {
+  color: #791c03;
+}
+
+mark {
+  color: #18181b;
+  background-color: #fa572a;
+  padding: 0 0.25rem;
+}
+
+section {
+  padding: 4rem 0rem;
+}
+
+/* TYPOGRAPHY */
 h1,
 h2,
 h3,
@@ -67,66 +107,210 @@ h5,
 h6 {
   font-weight: 300;
   margin: 0 0 1.6rem;
+  letter-spacing: -0.05rem;
+}
+
+h1 > span.subtitle,
+h2 > span.subtitle,
+h3 > span.subtitle,
+h4 > span.subtitle,
+h5 > span.subtitle,
+h6 > span.subtitle {
+  font-size: 1.4rem;
+  letter-spacing: normal;
+  color: #303036;
+}
+
+@media (prefers-color-scheme: dark) {
+  h1 > span.subtitle,
+  h2 > span.subtitle,
+  h3 > span.subtitle,
+  h4 > span.subtitle,
+  h5 > span.subtitle,
+  h6 > span.subtitle {
+    color: #d5d5d5;
+  }
 }
 
 h1 {
   font-size: 3.8rem;
+  line-height: 1.15;
 }
 
 h2 {
   font-size: 3.2rem;
+  line-height: 1.2;
 }
 
 h3 {
   font-size: 2.6rem;
+  line-height: 1.25;
 }
 
 h4 {
   font-size: 2.2rem;
+  line-height: 1.3;
 }
 
 h5 {
   font-size: 1.8rem;
+  line-height: 1.4;
 }
 
 h6 {
   font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+p {
+  margin-top: 0;
+}
+
+blockquote, dl, figure, form, ol, pre, p, table, ul {
+  margin-bottom: 2rem;
+}
+
+code {
+  background: #e1e1e1;
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+  margin: 0 0.3rem;
+  padding: 0.3rem 0.4rem;
+  white-space: nowrap;
+}
+
+@media (prefers-color-scheme: dark) {
+  code {
+    background: #242429;
+  }
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+small {
+  font-size: 1.2rem;
+}
+
+blockquote {
+  border-left: 0.5rem solid #fa572a;
+  border-radius: 0.4rem;
+  background: #e1e1e1;
+  margin: 0 0 2rem 0;
+  padding: 1.5rem 2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  blockquote {
+    background: #242429;
+  }
+}
+
+blockquote *:last-child {
+  margin-bottom: 0;
 }
 
 .container {
   width: 100%;
-  padding: 0 1.6rem;
+  padding: 4rem 1.6rem;
   margin: 0 auto;
   position: relative;
   display: block;
 }
 
+.visible-mobile-only {
+  display: block;
+}
+
+.visible-touch {
+  display: block;
+}
+
+.visible-desktop {
+  display: none;
+}
+
+.hidden-mobile {
+  display: none;
+}
+
+.hidden-touch {
+  display: none;
+}
+
 @media only screen and (min-width: 48rem) {
   .container {
     max-width: 73.6rem;
-    padding: 0 1.6rem;
+    padding: 4rem 1.6rem;
+  }
+  .visible-mobile-only {
+    display: none;
+  }
+  .hidden-mobile {
+    display: block;
   }
 }
 
 @media only screen and (min-width: 64rem) {
   .container {
     max-width: 96rem;
-    padding: 0 3.2rem;
+    padding: 4rem 3.2rem;
   }
 }
 
 @media only screen and (min-width: 80rem) {
   .container {
     max-width: 120rem;
-    padding: 0 4rem;
+    padding: 4rem 4rem;
+  }
+  .visible-touch {
+    display: none;
+  }
+  .hidden-touch {
+    display: block;
+  }
+  .visible-desktop {
+    display: block;
   }
 }
 
 @media only screen and (min-width: 100rem) {
   .container {
     max-width: 152rem;
-    padding: 0 4rem;
+    padding: 4rem 4rem;
   }
+}
+
+@media only screen and (min-width: 150rem) {
+  .container {
+    max-width: 230rem;
+    padding: 4rem 5rem;
+  }
+}
+
+.inline {
+  display: inline !important;
+}
+
+.inline-block {
+  display: inline-block !important;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  height: 0;
+  overflow: hidden;
+  display: table;
 }
 
 /*# sourceMappingURL=remcss.css.map */

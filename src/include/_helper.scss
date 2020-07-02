@@ -1,0 +1,19 @@
+.inline { // Helper class for displaying something inline
+  display: inline !important;
+}
+.inline-block { // Helper class for displaying something inline-block
+  display: inline-block !important;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  height: 0;
+  overflow: hidden;
+  display: table;
+}

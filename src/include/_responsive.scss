@@ -1,31 +1,67 @@
 .container {
   width: 100%;
-  padding: 0 $padding-mobile;
+  padding: $container-padding $padding-mobile;
   margin: 0 auto;
   position: relative;
   display: block;
 }
-@media only screen and (min-width: $breakpoint-small) {
+.visible-mobile-only { // Visible Mobile only
+  display: block;
+}
+.visible-touch { // Visible from Mobile to $breakpoint-lm
+  display: block;
+}
+.visible-desktop { // Visible from Desktop and above
+  display: none;
+}
+.hidden-mobile { // Hidden only on mobile
+  display: none;
+}
+.hidden-touch { // Hidden only from mobile to $breakpoint-lm
+  display: none;
+}
+@media only screen and (min-width: $breakpoint-sm) {
   .container {
-    max-width: $container-small;
-    padding: 0 $padding-small;
+    max-width: $container-sm;
+    padding: $container-padding $padding-sm;
+  }
+  .visible-mobile-only {
+    display: none;
+  }
+  .hidden-mobile {
+    display: block;
   }
 }
-@media only screen and (min-width: $breakpoint-ms) {
+@media only screen and (min-width: $breakpoint-m) {
   .container {
-    max-width: $container-ms;
-    padding: 0 $padding-ms;
+    max-width: $container-m;
+    padding: $container-padding $padding-m;
   }
 }
-@media only screen and (min-width: $breakpoint-ls) {
+@media only screen and (min-width: $breakpoint-lm) {
   .container {
-    max-width: $container-ls;
-    padding: 0 $padding-ls;
+    max-width: $container-lm;
+    padding: $container-padding $padding-lm;
+  }
+  .visible-touch {
+    display: none;
+  }
+  .hidden-touch {
+    display: block;
+  }
+  .visible-desktop {
+    display: block;
   }
 }
-@media only screen and (min-width: $breakpoint-large) {
+@media only screen and (min-width: $breakpoint-l) {
   .container {
-    max-width: $container-large;
-    padding: 0 $padding-large;
+    max-width: $container-l;
+    padding: $container-padding $padding-l;
+  }
+}
+@media only screen and (min-width: $breakpoint-xl) {
+  .container {
+    max-width: $container-xl;
+    padding: $container-padding $padding-xl;
   }
 }

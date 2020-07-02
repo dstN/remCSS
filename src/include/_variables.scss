@@ -17,24 +17,28 @@ $h1: 3.8rem;
 $headingmargin: 1.6rem;
 $regular: 300;
 $bold: 700;
-$color-bright: #18181b;
-$color-dark: #eee;
 
 /* Responsive */
-$container-large: 152rem;
-$padding-large: 4rem;
-$breakpoint-large: 100rem; // 1600px
+$container-padding: 4rem;
 
-$container-ls: 120rem;
-$padding-ls: 4rem;
-$breakpoint-ls: 80rem; // 1280px
+$container-xl: 230rem;
+$padding-xl: 5rem;
+$breakpoint-xl: 150rem; // 2400px
 
-$container-ms: 96rem;
-$padding-ms: 3.2rem;
-$breakpoint-ms: 64rem; // 1024px
+$container-l: 152rem;
+$padding-l: 4rem;
+$breakpoint-l: 100rem; // 1600px
 
-$container-small: 73.6rem;
-$padding-small: 1.6rem;
-$breakpoint-small: 48rem; // 768px
+$container-lm: 120rem;
+$padding-lm: 4rem;
+$breakpoint-lm: 80rem; // 1280px
+
+$container-m: 96rem;
+$padding-m: 3.2rem;
+$breakpoint-m: 64rem; // 1024px
+
+$container-sm: 73.6rem;
+$padding-sm: 1.6rem;
+$breakpoint-sm: 48rem; // 768px
 
 $padding-mobile: 1.6rem;
