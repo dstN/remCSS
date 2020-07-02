@@ -33,7 +33,6 @@ hr {
 a {
   color: desaturate($contrast, 33%);
   text-decoration: none;
-  transition: color ease-in-out 0.15s;
   &:hover, &:focus {
     color: $contrast;
   }
@@ -47,4 +46,26 @@ mark {
 }
 section {
   padding: 4rem 0rem;
+}
+.button, button, dd, dt, li {
+  margin-bottom: 1rem;
+}
+dl, ol, ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+dl dl, dl ol, dl ul, ol dl, ol ol, ol ul, ul dl, ul ol, ul ul {
+  font-size: 1.4rem;
+  margin: 1rem 0 1rem 2rem;
+}
+dd {
+  margin: 0 0 1rem 2rem;
+  font-size: 1.4rem;
+}
+ul {
+  list-style: square inside;
+}
+ol {
+  list-style: decimal inside;
 }

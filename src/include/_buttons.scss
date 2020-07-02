@@ -1,0 +1,56 @@
+.button, button, input[type='button'], input[type='submit'], input[type='reset'] {
+  background-color: $contrast;
+  border: 0.1rem solid $contrast;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.4rem;
+  line-height: 3.2rem;
+  padding: 0 3rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  &.button-flat {
+    background-color: transparent;
+    color: $contrast;
+    &[disabled] {
+      opacity: 0.4;
+      &:hover, &:focus {
+        background: transparent;
+        color: $contrast;
+        border-color: $contrast;
+      }
+    }
+    &:hover, &:focus {
+      color: $black;
+      border-color: $black;
+      background-color: transparent;
+      @media (prefers-color-scheme: dark) {
+        color: $white;
+        border-color: $white;
+        background-color: transparent;
+      }
+    }
+  }
+  &:hover, &:focus {
+    outline: 0;
+    background-color: $black;
+    border-color: $black;
+    color: $white;
+    @media (prefers-color-scheme: dark) {
+      background-color: $white;
+      border-color: $white;
+      color: $black;
+    }
+  }
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.4;
+    &:hover, &:focus {
+      background-color: $contrast;
+      border-color: $contrast;
+      color: $white;
+    }
+  }
+}

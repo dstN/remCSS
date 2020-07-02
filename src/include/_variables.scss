@@ -20,25 +20,24 @@ $bold: 700;
 
 /* Responsive */
 $container-padding: 4rem;
+$colpadding-mobile: 1.6rem;
 
-$container-xl: 230rem;
-$padding-xl: 5rem;
+$container-xl: 238.4rem;
+$padding-xl: $colpadding-mobile;
 $breakpoint-xl: 150rem; // 2400px
 
-$container-l: 152rem;
-$padding-l: 4rem;
+$container-l: 154.4rem;
+$padding-l: $colpadding-mobile;
 $breakpoint-l: 100rem; // 1600px
 
-$container-lm: 120rem;
-$padding-lm: 4rem;
+$container-lm: 126.4rem;
+$padding-lm: $colpadding-mobile;
 $breakpoint-lm: 80rem; // 1280px
 
-$container-m: 96rem;
-$padding-m: 3.2rem;
+$container-m: 100.8rem;
+$padding-m: $colpadding-mobile;
 $breakpoint-m: 64rem; // 1024px
 
 $container-sm: 73.6rem;
-$padding-sm: 1.6rem;
+$padding-sm: $colpadding-mobile;
 $breakpoint-sm: 48rem; // 768px
-
-$padding-mobile: 1.6rem;
