@@ -2,3 +2,6 @@
   color: $black;
   background-color: $contrast;
 }
+@mixin transition($args) {
+  transition: $args ease-in-out .3s;
+}

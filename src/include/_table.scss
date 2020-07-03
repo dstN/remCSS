@@ -1,0 +1,66 @@
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: 0;
+  thead {
+    width: 100%;
+    background-color: $contrast;
+    color: $black;
+  }
+  tbody {
+    border: 0.1rem solid $contrast;
+    border-top: 0;
+  }
+  tr th, tr td {
+    padding: 5px;
+    text-align: left;
+  }
+  tbody tr:nth-of-type(even) {
+    background-color: darken($white, 5%);
+    color: $black;
+    @media (prefers-color-scheme: dark) {
+      background-color: lighten($black, 5%);
+      color: $white;
+    }
+    &:hover {
+      background-color: $contrast;
+      color: $black;
+    }
+  }
+  tbody tr {
+    background-color: transparent;
+    color: $black;
+    @media (prefers-color-scheme: dark) {
+      color: $white;
+    }
+    &:hover {
+      background-color: $contrast;
+      color: $black;
+    }
+  }
+}
+
+table thead tr:after {
+  content: '';
+  overflow-y: scroll;
+  visibility: hidden;
+}
+table thead th {
+  flex: 1 auto;
+  display: block;
+}
+table tbody {
+  display: block;
+  width: 100%;
+  overflow-y: auto;
+  height: auto;
+  max-height: 9rem;
+}
+table thead tr, table tbody tr {
+  display: flex;
+}
+table tbody tr td {
+  flex: 1 auto;
+  word-wrap: break;
+}

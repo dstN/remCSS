@@ -1,6 +1,6 @@
 {
   "name": "remcss",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Minimalistic PURE CSS Framework based on rem.",
   "main": "index.js",
   "scripts": {

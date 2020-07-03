@@ -1,0 +1,98 @@
+fieldset {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+label, legend {
+  display: block;
+  font-weight: $bold;
+  margin-bottom: .4rem;
+}
+input[type='color'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='email'],
+input[type='month'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+input[type='week'],
+input:not([type]),
+textarea,
+select {
+  width: 100%;
+  box-shadow: none;
+  border: 0;
+  border-right: .1rem solid transparent;
+  border-bottom: .1rem solid darken($white, 15%);
+  color: $black;
+  background-color: darken($white, 15%);
+  @media (prefers-color-scheme: dark) {
+      color: $white;
+      border-bottom-color: lighten($black, 15%);
+      background-color: lighten($black, 15%);
+  }
+  border-radius: .2rem;
+  height: 4rem;
+  padding: 0.4rem 0.8rem 0.5rem;
+  -webkit-appearance: none;
+  @include transition(border-color);
+  &:focus {
+    outline: 0;
+    border-color: $contrast;
+    border-right: .1rem solid $contrast;
+  }
+}
+select {
+    background-image: linear-gradient(45deg, transparent 50%, darken($white, 15%) 50%),
+                      linear-gradient(135deg, darken($white, 15%) 50%, transparent 50%);
+    @media (prefers-color-scheme: dark) {
+      background-image: linear-gradient(45deg, transparent 50%, $contrast 50%),
+                        linear-gradient(135deg, $contrast 50%, transparent 50%);
+    }
+    background-position: calc(100% - 2rem) calc(1.5rem + .2rem),
+                         calc(100% - 1.5rem) calc(1.5rem + .2rem),
+                         calc(100% - 2.5rem) 0.5rem;
+    background-size: .5rem .5rem, .5rem .5rem, .1rem 1.5rem;
+    background-repeat: no-repeat;
+    option, optgroup {
+      background-color: $white;
+      @media (prefers-color-scheme: dark) {
+        background-color: $black;
+      }
+    }
+}
+input.is-error, select.is-error, textarea.is-error {
+  border-color: #f00;
+}
+input.is-valid, select.is-valid, textarea.is-valid {
+  border-color: #0f0;
+}
+textarea {
+  min-height: 8rem;
+  padding: 2rem 1rem;
+}
+input::-webkit-calendar-picker-indicator {
+  color: #fff;
+}
+::placeholder, ::ms-input-placeholder, :-ms-input-placeholder {
+  color: darken($white, 15%);
+  @media (prefers-color-scheme: dark) {
+    color: lighten($black, 15%);
+  }
+}
+input, select, textarea {
+  margin-bottom: 1.5rem;
+}
+label.label-inline {
+  display: inline-block;
+  font-weight: $regular;
+  margin-left: 0.4rem;
+}
+input[type='checkbox'], input[type='radio'] {
+  display: inline;
+}

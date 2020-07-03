@@ -69,3 +69,10 @@ ul {
 ol {
   list-style: decimal inside;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+iframe, fieldset, legend {
+  border: 0;
+}
