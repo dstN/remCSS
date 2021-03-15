@@ -479,19 +479,12 @@ input::-webkit-calendar-picker-indicator {
   color: #c8c8c8;
 }
 
-::-ms-input-placeholder {
-  color: #c8c8c8;
-}
-
 ::placeholder, ::ms-input-placeholder, :-ms-input-placeholder {
   color: #c8c8c8;
 }
 
 @media (prefers-color-scheme: dark) {
   :-ms-input-placeholder {
-    color: #3c3c44;
-  }
-  ::-ms-input-placeholder {
     color: #3c3c44;
   }
   ::placeholder, ::ms-input-placeholder, :-ms-input-placeholder {
