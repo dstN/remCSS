@@ -1,6 +1,6 @@
 {
   "name": "remframe",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Minimalistic PURE CSS Framework based on rem.",
   "main": "index.js",
   "scripts": {
